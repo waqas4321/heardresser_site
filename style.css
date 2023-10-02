@@ -81,12 +81,12 @@
     transition: .5s;
 }
 
-nav .fas {
+nav .fa {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    nav .fa-bar {
+    nav .fa-bars {
         display: block;
 
     }
@@ -99,17 +99,10 @@ nav .fas {
         cursor: pointer;
     }
 
-    .text-blog h1 {
-        font-size: 24px;
-    }
-
-    .nav-links li ul {
-        display: block;
-    }
 
     .nav-links {
         position: absolute;
-        background: #ff006e;
+        background: #f77f00;
         height: 100vh;
         width: 200px;
         text-align: left;
@@ -119,7 +112,20 @@ nav .fas {
         transition: 1s
     }
 
-    .nav-links .fas {
+    
+    .text-blog h1 {
+        font-size: 25px;
+    }
+
+    .text-blog p {
+        font-size: 8px;
+    }
+
+    .nav-links li ul {
+        display: block;
+    }
+
+    .nav-links .fa {
         display: block;
         color: white;
         margin: 10px;
