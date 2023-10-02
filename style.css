@@ -79,16 +79,18 @@
     background-color: #f77f00;
     color: black;
     transition: .5s;
-} 
+}
+
 nav .fas {
     display: none;
 }
 
-@media screen(max-width: 700px) {
-nav .fa-bar {
-    display: block;
+@media only screen and (max-width: 600px) {
+    nav .fa-bar {
+        display: block;
 
-}
+    }
+
     .fa-bars {
         position: absolute;
         left: 10px;
@@ -96,6 +98,7 @@ nav .fa-bar {
         font-size: 22px;
         cursor: pointer;
     }
+
     .text-blog h1 {
         font-size: 24px;
     }
@@ -115,6 +118,7 @@ nav .fa-bar {
         left: 0%;
         transition: 1s
     }
+
     .nav-links .fas {
         display: block;
         color: white;
