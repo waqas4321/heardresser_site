@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALMAN HEARDRESSER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!--logo starte from here-->
+    <div class="logo">
+        <img src="./img/haer dresser logo 2.png" alt="logo" width="200">
+    </div>
+
+    <!--navigation start from hear-->
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About us</a></li>
+                <li><a href="services.html"><i class="fas fa-globe"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> contant</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <!--navigation close from here-->
+    <div class="banner-contact">
+        <div class="text-contact">
+            <h1>services</h1>
+            <p>We're here to make scheduling your next grooming session effortless.
+                 Have a question or ready to book an appointment? Don't hesitate to reach out to us. 
+                 Our friendly team at<i class="salman">SALMAN HAIRDRESSER SHOP</i> is always ready to assist you. 
+                 You can contact us via phone,
+                  <a href="waqasmuneer943@gmail.com">waqasmuneer943@gmail.com</a> or by filling out the convenient form below.
+                  
+                   We look forward to hearing from you and helping you look your best. 
+                   Your style journey begins here at <i class="salman">SALMAN HAIRDRESSER SHOP</i>, 
+                   and we can't wait to be a part of it.</p>
+
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.left = ("0");
+        }
+        function hideMenu() {
+            navLinks.style.left = ("-200px");
+        }
+    </script>
+        

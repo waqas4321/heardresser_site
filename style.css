@@ -3,6 +3,7 @@
     padding: 0%;
     font-family: 'Lora', serif;
     font-family: 'Roboto', sans-serif;
+    border-sizing: border-box;
 }
 
 .logo {
@@ -13,7 +14,6 @@
 }
 
 .nav-links {
-
 
     background-color: #f77f00;
     text-align: center;
@@ -31,7 +31,6 @@
     text-decoration: none;
     color: white;
     font-size: 17px;
-
 }
 
 .banner {
@@ -81,14 +80,22 @@
     transition: .5s;
 }
 
-nav .fa {
+nav .fas {
     display: none;
 }
+.book {
+    text-align: center;
+ padding: 2%;
+    background-color: #333;
+    color: black;
+    transition: .5s
 
-@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 700px) {
+
     nav .fa-bars {
         display: block;
-
     }
 
     .fa-bars {
@@ -96,41 +103,269 @@ nav .fa {
         left: 10px;
         top: 28px;
         font-size: 22px;
+        color: white;
         cursor: pointer;
     }
 
+    .text-block h1 {
+        font-size: 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
 
     .nav-links {
         position: absolute;
-        background: #f77f00;
+        background-color: #f77f00;
         height: 100vh;
         width: 200px;
         text-align: left;
         z-index: 2;
         top: 0%;
-        left: 0%;
-        transition: 1s
+        left: -200%;
+        transition: .5s;
     }
 
-    
-    .text-blog h1 {
-        font-size: 25px;
-    }
-
-    .text-blog p {
-        font-size: 8px;
-    }
-
-    .nav-links li ul {
-        display: block;
-    }
-
-    .nav-links .fa {
+    .nav-links .fas {
         display: block;
         color: white;
         margin: 10px;
-        font-size: 20px;
+        font-size: 22px;
         cursor: pointer;
 
     }
+    .ad-banner {
+        text-align: center;
+    }
 }
+
+
+/* Grid system */
+.col-md-1 {
+    width: 8.33%;
+}
+
+.col-md-2 {
+    width: 16.66%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.33%;
+}
+
+.col-md-5 {
+    width: 41.66%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-7 {
+    width: 58.33%;
+}
+
+.col-md-8 {
+    width: 66.66%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-10 {
+    width: 83.33%;
+}
+
+.col-md-11 {
+    width: 91.66%;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .row .container {
+        width: 768px;
+    } 
+}
+@media only screen and (max-width: 992px) {
+    .row .container {
+        width: 992px;
+    }
+    }
+@media only screen and (max-width: 1200px) {
+    .row .container {
+        width: 1200px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .row .container{
+        width: 576px; }
+  }
+  
+/*Grid system*/
+
+.heading {
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+    color: white;
+    background-color: #333;
+}
+
+.row {
+    background-color: black;
+}
+
+.row p {
+    color: white;
+}
+
+.ad-banner {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.img-responsive-2 {
+    max-width: 100%;
+    height: 50vh;
+}
+/*About*/
+
+
+.banner-about {
+    width: 100%;
+    min-height: 100vh;
+    background: url(./img/Untitled\ design\ \(6\).png);
+    no-repeat background-size: relative;
+    background-size: cover;
+}
+.text-about {
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-about h1 {
+    font-size: 40px;
+    color: black;
+  
+}
+
+.text-about p {
+    font-size: 16px;
+    color: black;
+    
+    
+}
+
+.salman {
+    color: white;
+}
+/*about*/
+
+/*services*/
+.banner-services {
+    width: 100%;
+    min-height: 100vh;
+    background: url(./img/barber\ shop\ 4.jpg);
+    no-repeat background-size: relative;
+    background-size: cover;
+}
+.text-services {
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-services h1 {
+    font-size: 40px;
+    color: white;
+  
+}
+
+.text-services p {
+    font-size: 16px;
+    color: white;
+    
+    
+}
+
+.salman {
+    color: white;
+}
+/*services*/
+
+
+/*contact*/
+.banner-contact {
+    
+    width: 100%;
+    min-height: 100vh;
+    background: url(./img/contact.jpg);
+    no-repeat background-size: relative;
+    background-size: cover;
+}
+.text-contact{
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-contact h1 {
+    font-size: 40px;
+    color: #9d4edd;
+  
+}
+
+.text-contact p {
+    font-size: 16px;
+    color: #ff9e00;
+    
+    
+}
+
+.salman {
+    color: white;
+}
+/*contact*/

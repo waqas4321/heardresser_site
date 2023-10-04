@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALMAN HEARDRESSER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!--logo starte from here-->
+    <div class="logo">
+        <img src="./img/haer dresser logo 2.png" alt="logo" width="200">
+    </div>
+
+    <!--navigation start from hear-->
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About us</a></li>
+                <li><a href="services.html"><i class="fas fa-globe"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> contant</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <!--navigation close from here-->
+    <div class="banner-about">
+        <div class="text-about">
+            <h1>ABOUT US</h1>
+            <p>Welcome to <i class="salman">SALMAN HAIRDRESSER SHOP</i>, where grooming meets artistry.
+                Our passion for timeless style and precision has been the driving force behind our establishment. 
+               With years of experience, our talented team of barbers has honed their craft to perfection, 
+               ensuring every visit is a cut above the rest. We take pride in providing a welcoming atmosphere where you can relax, 
+               unwind, and leave looking and feeling your absolute best. From classic cuts to modern trends, we've got you covered.
+                Discover the difference of <i class="salman">SALMAN HAIRDRESSER SHOP</i>, where tradition meets innovation.</p>
+
+        </div>
+    </div>
+
+  <center><h1>SALMAN HAIRDRESSER</h1></center>
+     <div class="featured-about">
+            <div class="col-md-4">
+                
+                <p>
+                    "Experience the artistry of our skilled barbers at <i>salman heardresser</i> Shop, where precision
+                    meets
+                    style.
+                    From classic cuts to modern trends, our featured services offer a grooming experience like no other,
+                    ensuring you leave looking and feeling your best."
+                </p>
+            </div>
+
+            <div class="col-md-4">
+              
+                <p>Experience top-notch grooming and style at our barber shop,
+                    where our skilled barbers offer precision haircuts and razor-sharp shaves.
+                    Discover the epitome of grooming excellence with our featured services.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+               
+                <p>"Experience the ultimate in grooming excellence at our barber shop, where precision meets style.
+                    Our featured services are designed to elevate your look,
+                    offering the finest in haircuts and grooming to leave you looking and feeling your best."
+                </p>
+            </div>
+     </div>
+        
+      
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.left = ("0");
+        }
+        function hideMenu() {
+            navLinks.style.left = ("-200px");
+        }
+    </script>
+    
+
+</body>
+
+</html>
