@@ -3,7 +3,7 @@
     padding: 0%;
     font-family: 'Lora', serif;
     font-family: 'Roboto', sans-serif;
-    border-sizing: border-box;
+   
 }
 
 .logo {
@@ -31,6 +31,10 @@
     text-decoration: none;
     color: white;
     font-size: 17px;
+}
+
+.nav-links-2 {
+    text-align: left;
 }
 
 .banner {
@@ -66,10 +70,12 @@
     color: #f77f00;
     border: 1px solid #f77f00;
     padding: 12px 40px;
-    font-size: 16px;
+    font-size: 20px;
     background: transparent;
     position: relative;
     margin-top: 20px;
+    padding: 10px;
+  border-radius: 50px 20px;
 
 }
 
@@ -81,6 +87,12 @@
 }
 
 nav .fas {
+    display: inline-block;
+}
+nav .fa-bars {
+    display: none;
+}
+nav .fa-times {
     display: none;
 }
 .book {
@@ -135,10 +147,8 @@ nav .fas {
         cursor: pointer;
 
     }
-    .ad-banner {
-        text-align: center;
-    }
 }
+   
 
 
 /* Grid system */
@@ -210,7 +220,7 @@ nav .fas {
 
 @media only screen and (max-width: 768px) {
     .row .container {
-        width: 768px;
+        width: 600px;
     } 
 }
 @media only screen and (max-width: 992px) {
@@ -228,6 +238,28 @@ nav .fas {
         width: 576px; }
   }
   
+
+  /* Default styles for larger screens */
+.nav-links {
+    /* Your existing styles for the navigation menu */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        left: -200px; /* Initially hide the menu off-screen */
+        transition: left 0.3s ease-in-out;
+    }
+    .nav-links.active {
+        left: 0; /* Display the menu on small screens */
+    }
+}
+
+/* Add more media queries as needed for other elements */
+
+
+
 /*Grid system*/
 
 .heading {
@@ -256,7 +288,7 @@ nav .fas {
 }
 .img-responsive-2 {
     max-width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 /*About*/
 
@@ -264,7 +296,8 @@ nav .fas {
 .banner-about {
     width: 100%;
     min-height: 100vh;
-    background: url(./img/Untitled\ design\ \(6\).png);
+   background-color: #f2e9e4;
+   background: url(./img/about\ 2.jpg);
     no-repeat background-size: relative;
     background-size: cover;
 }
@@ -281,19 +314,54 @@ nav .fas {
 .text-about h1 {
     font-size: 40px;
     color: black;
+    background-color: #ffc2d1;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+      
   
 }
 
 .text-about p {
     font-size: 16px;
-    color: black;
-    
-    
+    color: #333;
+    background-color: #ff8fab; 
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 50px 20px;
 }
 
 .salman {
     color: white;
 }
+@media only screen and (max-width: 700px){
+    
+    
+    .text-about h1 {
+        font-size: 30px;
+        color: black;
+    background-color: #ffc2d1;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+    }
+    .text-about p {
+        font-size: 12px;
+        color: #333;
+        background-color: #ff8fab; 
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    }
+        
+    }
+    
+    
+
+
+
 /*about*/
 
 /*services*/
@@ -317,12 +385,23 @@ nav .fas {
 .text-services h1 {
     font-size: 40px;
     color: white;
+    background-color: black;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+    
   
 }
 
 .text-services p {
     font-size: 16px;
     color: white;
+        background-color: black; 
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    
     
     
 }
@@ -330,6 +409,30 @@ nav .fas {
 .salman {
     color: white;
 }
+
+@media only screen and (max-width: 700px){
+    
+    
+    .text-services h1 {
+        font-size: 30px;
+        color: white;
+    background-color: black;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+    }
+    .text-services p {
+        font-size: 12px;
+        color: white;
+        background-color: black; 
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    }
+        
+    }
+    
 /*services*/
 
 
@@ -337,8 +440,8 @@ nav .fas {
 .banner-contact {
     
     width: 100%;
-    min-height: 100vh;
-    background: url(./img/contact.jpg);
+    min-height: 55vh;
+    background: url(./img/contact\ 2.jpg);
     no-repeat background-size: relative;
     background-size: cover;
 }
@@ -346,7 +449,7 @@ nav .fas {
     width: 80%;
     color: #ffffff;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -354,13 +457,153 @@ nav .fas {
 
 .text-contact h1 {
     font-size: 40px;
-    color: #9d4edd;
+    color: black;
+    text-align: left;
   
 }
 
 .text-contact p {
     font-size: 16px;
-    color: #ff9e00;
+    color: black;
+    text-align: left;
+    
+}
+.text-contact p .col-md-12 {
+    text-align: left;
+}
+nav .fa-phone {
+    display: inline-block;}
+    
+    
+
+.salman {
+    color: #333;
+}
+
+
+@media only screen and (max-width: 700px){
+    
+    
+    .text-contact h1 {
+        font-size: 30px;
+       
+    }
+    .text-contact p {
+        font-size: 12px;
+       
+    }
+        
+    }
+@media only screen and (max-width: 700px){
+    
+    
+    .text-contact h1 {
+        font-size: 30px;
+        color: black;
+      
+    }
+    .text-contact p {
+        font-size: 12px;
+    }
+    
+    
+}
+/*contact*/
+
+/*learn more*/
+.learn .btn-primary-2 {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #e29578;
+    border: 1px solid #780000;
+    padding: 12px 40px;
+    font-size: 16px;
+    background-color: black;
+    
+    margin-top: 0px;
+    text-align: right;
+    border: 2px solid white;
+  padding: 10px;
+  border-radius: 50px 20px;
+
+}
+
+.btn-primary-2:hover {
+    border: 2px solid white;
+    background-color: #d00000;
+    color: white;
+    transition: .5s;
+    border: 2px solid white;
+  padding: 10px;
+  border-radius: 50px 20px;
+    
+}
+.text-learn-more {
+    text-align: center;
+}
+.btn-primary-2-boten {
+    text-align: center;
+    margin: 20px;
+   
+}
+.learn-more-all {
+    background-color: black;
+}
+/*learn*/
+
+.banner-learn-more {
+    
+    width: 100%;
+    min-height: 55vh;
+    background: url(./img/leARN\ MORE.png);
+    no-repeat background-size: relative;
+    background-size: cover;
+}
+.text-learn-more{
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-learn-more h1 {
+    font-size: 40px;
+    color: black;
+    text-align: left;
+  
+}
+
+.text-learn-more p {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    
+}
+
+.text-learn-more h1 {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+    
+  
+}
+
+.text-learn-more p {
+    font-size: 16px;
+    color: white;
+        background-color: black; 
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    
     
     
 }
@@ -368,4 +611,32 @@ nav .fas {
 .salman {
     color: white;
 }
-/*contact*/
+
+@media only screen and (max-width: 700px){
+    
+    
+    .text-learn-more h1 {
+        font-size: 30px;
+        color: white;
+    background-color: black;
+    border: 2px solid #fb6f92;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin: 2%;
+    }
+    .text-learn-more p {
+        font-size: 12px;
+        color: white;
+        background-color: black; 
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    }
+        
+    }
+
+    .appointment {
+padding: 1opx;
+background-color: #780000
+    }
+    
