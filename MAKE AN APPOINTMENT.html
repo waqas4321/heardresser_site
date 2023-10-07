@@ -10,20 +10,139 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    /* Header and Navigation */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    color: #007bff;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+/* Customize form element colors */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+select {
+    appearance: none;
+    background-color: #f9f9f9;
+    background-image: url('down-arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Appointment Section */
+.appointment {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Customize column colors */
+.appointment div {
+    width: 30%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.appointment h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.appointment a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.appointment a i {
+    margin-right: 5px;
+}
+</style>
+
 </head>
 
-<body>
+<body class="last">
 
-    <!--logo starte from here-->
+    <!--logo start from here-->
     <div class="logo">
         <img src="./img/haer dresser logo 2.png" alt="logo" width="200">
     </div>
 
-    <!--navigation start from hear-->
+    <!--navigation start from here-->
     <nav>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
@@ -31,36 +150,53 @@
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About us</a></li>
                 <li><a href="services.html"><i class="fas fa-globe"></i> Services</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> contant</a></li>
-
-
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
             </ul>
-
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
-
     </nav>
+
+    <h2>Make an appointment</h2>
+    <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="book_time">Book Time:</label>
+        <input type="time" id="book_time" name="book_time" required><br><br>
+
+        <label for="book_day">Book Day:</label>
+        <input type="date" id="book_day" name="book_day" required><br><br>
+
+        <label for="service_type">Service Type:</label>
+        <select id="service_type" name="service_type" required>
+            <option value="hair_cut">Hair Cut</option>
+            <option value="classic_haircut">Classic Haircut</option>
+            <option value="beard_trims">Beard Trims</option>
+            <option value="hot_towel_shaves">Hot Towel Shaves</option>
+            <option value="long_hair_cut">Long Hair Cut or Scissor Cut</option>
+            <option value="shampoo_cut">Shampoo & Cut</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
     <div class="appointment">
-        <div class="col-md-4">
+        <div>
             <h2>Our location</h2>
-            <a href=""><i class="fas fa-map-marker-alt"></i>jhagra gujjer malogo peshawar</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Jhagra Gujjer Malogo Peshawar</a>
         </div>
-        <div class="col-md-4">
-            <h2>contact Information</h2>
-            <a href=""><i class="fas fa-phone">03157940374</i>03157940374</a><br>
-            <a href=""><i class="fas fa-envelope"></i>waqasmuneer@gmail.com</a>
+        <div>
+            <h2>Contact Information</h2>
+            <a href="#"><i class="fas fa-phone"></i> 03157940374</a><br>
+            <a href="#"><i class="fas fa-envelope"></i> waqasmuneer@gmail.com</a>
         </div>
-        <div class="col-md-4">
-            <h2>Working houre</h2>
-            <a href=""><i class="fas fa-clock">Mon – Fri: 9:00 AM – 8:00 PM <br>
-
-                    Saturday: 9:00 AM – 8:00 PM<br>
-
-                    Sunday: 10:00 AM – 7:00 PM</i></a>
+        <div>
+            <h2>Working Hours</h2>
+            <a href="#"><i class="fas fa-clock"></i> Mon – Fri: 9:00 AM – 8:00 PM <br>
+                Saturday: 9:00 AM – 8:00 PM<br>
+                Sunday: 10:00 AM – 7:00 PM</a>
         </div>
     </div>
-
-
 
     <script>
         var navLinks = document.getElementById("navLinks");

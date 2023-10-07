@@ -1,77 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALMAN HEARDRESSER</title>
+    <title>SALMAN HAIRDRESSER</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links ul li {
+            display: inline;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+
+        .nav-links ul li a:hover {
+            color: #007bff;
+        }
+
+        .banner-services {
+            background-color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .text-services {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .salman {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        table {
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
 <body>
 
-    <!--logo starte from here-->
     <div class="logo">
         <img src="./img/haer dresser logo 2.png" alt="logo" width="200">
     </div>
 
-    <!--navigation start from hear-->
     <nav>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About us</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Us</a></li>
                 <li><a href="services.html"><i class="fas fa-globe"></i> Services</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> contant</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
                 <li><div class="learn"><a href="MAKE AN APPOINTMENT.html" class="btn-primary-2">MAKE AN APPOINTMENT</a></div></li>
-
             </ul>
-
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
-
     </nav>
-    <!--navigation close from here-->
+
     <div class="banner-services">
         <div class="text-services">
-            <h1>services</h1>
-            <p>At 
-                <i class="salman">SALMAN HAIRDRESSER SHOP</i>, we offer a comprehensive range of top-notch grooming services to cater to your every need.
-                 Our skilled barbers specialize in classic haircuts, beard trims, and hot towel shaves,
-                  delivering impeccable results with attention to detail. Whether you're seeking a fresh,
-                  modern look or prefer a timeless, traditional style,
-                   we've got the expertise and creativity to bring your vision to life.
-                    Relax in our comfortable chairs and let us pamper you with our signature services.
-                     Experience the art of grooming at its finest with 
-                     <i class="salman">SALMAN HAIRDRESSER SHOP</i></p>
-                     
-                           </div>
-
+            <h1>Services</h1>
+            <p>At <i class="salman">SALMAN HAIRDRESSER SHOP</i>, we offer a comprehensive range of top-notch grooming services to cater to your every need. Our skilled barbers specialize in classic haircuts, beard trims, and hot towel shaves, delivering impeccable results with attention to detail. Whether you're seeking a fresh, modern look or prefer a timeless, traditional style, we've got the expertise and creativity to bring your vision to life. Relax in our comfortable chairs and let us pamper you with our signature services. Experience the art of grooming at its finest with <i class="salman">SALMAN HAIRDRESSER SHOP</i></p>
         </div>
     </div>
 
-  
-      
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Rates (Rs)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Classic Haircuts</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Beard Trims</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Hot Towel Shaves</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Long Hair Cut or Scissor Cut</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Shampoo & Cut</td>
+                <td>150</td>
+            </tr>
+        </tbody>
+    </table>
+
     <script>
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-            navLinks.style.left = ("0");
+            navLinks.style.left = "0";
         }
+
         function hideMenu() {
-            navLinks.style.left = ("-200px");
+            navLinks.style.left = "-200px";
         }
     </script>
-        
-    </body>
 
+</body>
 </html>
